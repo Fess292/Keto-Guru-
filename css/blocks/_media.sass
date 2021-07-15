@@ -1,0 +1,667 @@
+@media screen and (min-width: 320px) 
+    .web
+        display: none
+    .header
+        .web
+            display: none
+    // .topheader
+    //     .web
+    //         display: none
+@media screen and (min-width: 425px) 
+    .container 
+        width: 400px
+
+    .blog
+        .comments
+            &__img
+                &_3, &_4
+                    max-height: 156px 
+                &_7, &_8
+                    height: 170px
+        .recomend
+            &__autor
+                margin-top: 0
+
+@media screen and (min-width: 768px) 
+    .container 
+        width: 744px
+    .header
+        .justify
+            height: 60px
+        .logo
+            padding-top: 8px
+            &__toptitle
+                margin-bottom: 3px
+            &__img
+                &_2
+                    display: inline-block
+                    // width: 290px
+                    vertical-align: middle
+                    margin-top: -28px
+                    position: relative
+                    overflow: hidden
+                    z-index: 2
+                    background: #c1b8bf
+                    padding-left: 33px
+                    padding-right: 60px
+                    height: 49px
+                    img
+                        // width: 100%
+                        // height: 100%
+                    &::before
+                        position: absolute
+                        top: 5px
+                        left: 5px
+                        content: 'The best way to lose weight'
+                        width: 150px
+                        height: 100%
+                        font-size: 19px
+                        font-weight: 800
+                        line-height: 1
+                        text-align: left
+                        color: #ffffff
+                        text-shadow: 0px 5px 6px rgba(0, 0, 0, 0.51)
+                    &::after
+                        content: ''
+                        position: absolute
+                        right: -44px
+                        top: 0
+                        // width: 90px
+                        width: 200px
+                        height: 100%
+                        background: url("../img/Keto_Tube.png") no-repeat 50% 25%
+                        z-index: -1
+
+        .hamburger
+            vertical-align: middle
+            margin-top: -23px
+    .blog
+        .recomend
+            .post
+                &__list
+                    &::before
+                        width: 724px
+        .post
+            &__1__descr, &__descr 
+                padding-left: 75px
+                &:before
+                    left: 45px
+            &__1__descr_03 img, &__descr_03 img
+                margin: 0 auto
+                margin-top: 11px
+            &__list
+                padding-left: 20px
+            &__3 
+                dt
+                    padding-left: 35px
+                    margin-top: 36px
+                    &:first-child
+                        margin-top: 22px
+                    &::before 
+                        width: 80px
+                        height: 55px
+                        top: -17px
+                        left: 0
+            &__4
+                &_img
+                    display: inline-block
+                strong
+                    font-style: italic
+        .comments
+            &__ava
+                vertical-align: middle
+            &__date
+                vertical-align: top
+                position: relative
+                left: 0
+                top: 3px
+            &__itemheader
+                b
+                    vertical-align: top
+                    margin-left: 13px
+                    margin-right: 16px
+            &__answer
+                top: 3px 
+            &__item
+                p
+                    padding-left: 59px
+                    margin-top: -10px
+                &_in
+                    padding-left: 59px
+            &__img
+                &_3, &_4
+                    max-height: 227px 
+                &_7, &_8
+                    height: 274px
+        .recomend
+            .social
+                display: block
+                vertical-align: middle
+                position: relative
+                top: -80px
+                right: -85%
+                // right: 100px
+                
+
+
+@media screen and (min-width: 990px) 
+    .container 
+        width: 960px
+    .button
+        max-width: 474px
+        font-size: 24px
+    .title
+        font-size: 30px
+        padding-left: 79px
+        line-height: 2
+        &::before
+            width: 67px
+            height: 67px
+            padding-top: 2px
+    .header
+        .web
+            display: block
+        // text-align: justify
+        .logo
+            &__img
+                &_2
+                    display: inline-block
+                    height: 80px
+                    padding-right: 0
+                    &::after
+                        right: -20px
+                        background-position: 50% 15% 
+        .topheader
+            height: 53px
+            vertical-align: middle
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                width: 100%
+                height: 1px
+                background: $gray
+                bottom: -108px
+            ul
+                // display: inline-block
+                text-align: justify
+                padding-top: 12px
+            .web
+                display: none
+            &__item
+                display: inline-block
+                list-style: none
+                vertical-align: middle
+                position: relative
+
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    font-size: 13px
+                    text-align: center
+                    &:hover
+                        color: $red
+
+                &::before
+                    position: absolute
+                    // display: inline-block
+                    content: ''
+                    top: 0%
+                    right: -20px
+                    width: 1px
+                    height: 100%
+                    border-right: dashed 1px #5d74a0
+                    &:hover
+                        border-radius: 4px
+                        background: linear-gradient(to right, $red 0%, $red 5px, transparent)
+
+                svg
+                    // margin-top: 8px
+                    width: 20px
+                    top: 3px
+                    height: 18px
+                    fill: #fff
+                    position: relative
+                    &::before
+                        position: absolute
+                        content: ''
+                        top: 0%
+                        right: -20px
+                        width: 1px
+                        height: 100%
+                        border-right: dashed 1px #ffffff
+                        
+                    &:hover
+                        fill: $red
+                        cursor: pointer
+                        // background: none
+                    //      border-radius: 0
+
+                &_black
+                    border-radius: 2px
+                    background-color: #000000
+                    padding: 0 5px
+                    &:hover
+                        background-color: $red
+                        a
+                            color: #000
+                        
+
+        .justify
+            height: 108px
+            // width: 100%
+            margin-bottom: 10px
+            
+        .logo
+            &__toptitle
+                font-size: 17px
+            &__img
+                width: 54px
+                height: 54px
+                &_2
+                    width: 478px
+                    margin-top: -52px
+                    &::before
+                        top: 5px
+                        font-size: 22px
+                        transition-duration: 0.5s
+                    &:hover
+                        &::before
+                            text-shadow: none
+                            transition-duration: 0.5s
+            &__title
+                font-size: 76px
+            &__subtitle
+                font-size: 14px
+                padding: 5px 5px 5px 18px
+                &::after
+                    width: 15px
+                    height: 15px
+                    top: 4px
+            
+        .hamburger
+            display: none
+        .menu
+            text-align: justify
+            height: 39px
+            
+            &__item
+                display: inline-block
+                position: relative
+                
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 1px
+                    height: 100%
+                    top: 0
+                    left: -7px
+                    background-color: #000
+                &:first-child
+                    &::before
+                        display: none
+                a
+                    font-size: 15px
+                    text-transform: uppercase
+                    text-decoration: none
+                    color: #000
+                    &:hover
+                        color: $red
+
+                            
+                    &::before,
+                    &::after 
+                        position: absolute
+                        top: 100%
+                        left: 0
+                        width: 100%
+                        height: 1px
+                        background: #000
+                        content: ''
+                        -webkit-transition: -webkit-transform 0.3s
+                        -moz-transition: -moz-transform 0.3s
+                        transition: transform 0.3s
+                        -webkit-transform: scale(0)
+                        -moz-transform: scale(0)
+                        transform: scale(0)
+
+                    &::after 
+                        opacity: 0
+                        -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s
+                        -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s
+                        transition: top 0.3s, opacity 0.3s, transform 0.3s
+
+                    &:hover::before,
+                    &:hover::after,
+                    &:focus::before,
+                    &:focus::after 
+                        -webkit-transform: scale(1)
+                        -moz-transform: scale(1)
+                        transform: scale(1)
+
+                    &:hover::after,
+                    &:focus::after 
+                        top: 0%
+                        opacity: 1
+    .blog
+        padding: 0 16px
+        margin: 21px 0
+        .header
+            padding-top: 21px
+            &__title
+                margin-left: -27px
+                padding-left: 30px
+                &::after
+                    left: 87%
+            &__link
+                display: block
+                margin-left: 30px
+                margin-top: 10px
+        .subheader
+            margin-left: 639px
+            margin-top: -70px
+        h1
+            margin-top: 44px
+            font-size: 50px
+        h2
+            font-size: 33px
+        h4
+            font-size: 30px
+        .social__icon
+            a
+                width: 37px
+                height: 37px
+                svg
+                    margin-top: 6px
+                    width: 20px
+                    height: 20px
+        .post
+            &__1__descr, &__descr
+            // padding-left: 110px
+            width: auto
+            &__descr
+                padding-left: 110px
+                &::before
+                    left: 78px
+                    top: 0px
+            &__1__descr_03 img, &__descr_03 img
+                width: auto
+            &__list
+                padding-left: 0
+                padding-bottom: 31px
+            &__2
+                padding-top: 39px
+                p
+                    font-size: 18px
+                img
+                    position: relative
+
+        .post__3
+            dl
+                padding: 0 61px 24px 29px
+                // padding-left: 29px
+                // padding-right: 61px
+                // padding-bottom: 24px
+                dt
+                    &::before
+                        left: -13px
+        .post__4
+            margin-top: 33px
+            .post__list
+                padding-left: 79px
+                ul
+                    li
+                        margin-bottom: 14px
+            h2
+                font-size: 30px
+            // h4, strong
+            //     font-size: 18px
+        .comments
+            &__header
+                height: 45px
+                padding-top: 7px
+                &_social
+                    .social__icon
+                        a
+                            width: 30px
+                            height: 30px
+                            svg
+                                width: 16px
+                                height: 16px
+
+            &__item
+                padding-bottom: 10px
+                &_in
+                    padding-left: 59px
+            &__img
+                &_1
+                    display: inline-block
+                    margin-left: 59px
+                    max-width: 324px
+                &_2
+                    display: inline-block
+                    max-width: 505px
+                    // max-height: 280px
+                &_5
+                    display: inline-block
+                    max-width: 280px
+                &_6
+                    display: inline-block
+                    max-width: 503px
+        .recomend
+            padding-bottom: 34px
+            &__ava
+                width: 243px
+                height: 243px
+                margin-bottom: 0
+                margin-right: 19px
+            &__autor
+                font-size: 24px
+                width: 425px
+            .social
+                top: -135px
+            .post__list
+                &:first-child 
+                    text-align: center
+                ul
+                    margin-top: 0
+                    display: inline-block
+                    width: 345px
+                    vertical-align: top
+                    text-align: left
+                    &:first-child
+                        margin-right: 85px
+                .recomend__list
+                    width: auto
+                &::before
+                    width: 940px
+                    left: -16px
+                &:last-child
+                    &::before
+                        height: 89%
+                    h4
+                        margin: 25px 0
+            &__img
+                float: left
+                margin-top: -175px
+                // margin-right: 615px
+                position: relative
+                // margin: 0
+                // left: 0px
+            strong
+                padding-left: 288px
+
+    
+
+@media screen and (min-width: 1200px) 
+    .container 
+        width: 1170px
+    .header
+        .menu
+            &__item 
+                &::before
+
+                    top: 0
+                    left: -19px
+        .logo
+                &__toptitle
+                    margin-bottom: -4px
+                &__img
+                    &_2
+                        height: 90px
+        .topheader
+            .social
+                display: inline-block
+                a 
+                    display: block
+                    width: 30px
+                    height: 30px
+                    margin: 0 3px 3px 0
+                    text-align: center
+                    color: #fff
+                    border: 1px solid #ccc
+                    border-radius: 24px
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.15)
+                a:hover 
+                    border-color: #888
+                    opacity: .8
+                svg 
+                    margin-top: 4px
+                    width: 13px
+                    height: 13px
+                .facebook a 
+                    background: #3b5998
+                .pinterest a 
+                    background: #c8232c
+                .twitter a 
+                    background: #00acee
+                &__icon
+                    display: inline-block
+            &__item
+                &_social
+                    &::before
+                        display: none
+        .logo
+            &__img
+                &_2
+                    width: 543px
+                    &::before
+                        text-transform: uppercase
+                        font-size: 24px
+                        width: 181px
+                        top: 9px
+                        left: 9px
+    .blog
+        padding: 0 40px 0px 33px
+        .header
+            &__title
+                margin-left: -44px            
+        .subheader
+            margin-left: 808px
+        h2
+            margin-top: 17px
+        .social
+            &__date
+                &_date
+                    margin-right: 16px
+                &_eye
+                    margin-right: 12px
+        .post
+            &__2
+                padding-top: 26px
+                figure
+                    padding: 6px
+                    margin-right: 7px
+                    figcaption
+                        margin-top: 6px
+                    &:hover
+                        img 
+                            opacity: 1
+                            -webkit-animation: flash 1.5s
+                            animation: flash 1.5s
+                        @-webkit-keyframes flash
+                            0%
+                                opacity: .4
+                            100%
+                                opacity: 1
+
+                        @keyframes flash
+                            0%
+                                opacity: .4
+                            100%
+                                opacity: 1
+                h2
+                    margin-top: 30px
+            &__3
+                dl
+                    margin-left: 77px
+            &__4
+                .post
+                    &__list
+                        padding-bottom: 7px
+                        ul 
+                            li
+                                &::after
+                                    top: 4px
+                h4
+                    margin-bottom: 22px
+                .button
+                    margin-top: 36px
+                    margin-bottom: 29px
+        .recomend
+            padding-top: 0
+            &__ava
+                margin-top: 0
+                position: relative
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset
+            &__h4
+                position: relative
+                top: 40px
+                left: 273px
+                &_last
+                    top: 100px
+                // margin-left: 252px
+                // margin-bottom: -30px
+                // margin-top: 50px
+            &__autor
+                margin-top: -40px
+                &_last
+                    margin-top: 60px
+
+                // &::last-child
+                //     margin-top: 50px
+                    
+            &__descr
+                margin-left: 273px
+                margin-top: -135px
+            &__img
+                margin-top: -120px
+            strong
+                margin-top: 49px
+            p
+                &:last-child
+                    padding-bottom: 18px
+                    padding-top: 27px
+            .social
+                right: -88%
+                top: -156px
+                &_last
+                    top: -115px
+            .post__list
+                padding-left: 37px
+                &::before
+                    left: -33px
+                    width: 1150px
+                &:last-child
+                    &::before
+                        height: 78%
+            .button
+                margin-top: 35px
+                // margin-bottom: 35px
+
+                            
+
+                
+
+
+
